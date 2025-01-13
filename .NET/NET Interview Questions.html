@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notonaskharabic.css">
+    <title>.NET Interview Questions</title>
+    <style>
+        html, body {
+            font-family: 'Noto Naskh Arabic';
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="اسئلة-مقابلات-net">اسئلة مقابلات .NET</h1>
+<hr>
+<p><strong>شو الفرق بين HTTP و HTTPS؟</strong><br>HTTP بروتوكول عادي لنقل البيانات بدون أمان، لكن HTTPS بيضيف تشفير للبيانات باستخدام SSL عشان تكون آمنة أثناء النقل.</p>
+<hr>
+<p><strong>شو هو Middleware؟</strong><br>جزء في التطبيق بيعالج الطلبات والاستجابات بترتيب معين، زي التعامل مع الأخطاء أو التحقق من الهوية.</p>
+<hr>
+<p><strong>شو الفرق بين Task و Thread؟</strong><br>Thread وحدة معالجة مستقلة وبتحتاج إدارة يدوية، أما Task بتشتغل على العمليات غير المتزامنة وبتسهل التعامل معها.</p>
+<hr>
+<p><strong>شو الفرق بين IEnumerable و IQueryable؟</strong><br>IEnumerable بتنقل البيانات في الذاكرة وبتشتغل مع البيانات الصغيرة، أما IQueryable بتنفذ الاستعلام في قاعدة البيانات وبتفيد مع البيانات الكبيرة.</p>
+<hr>
+<p><strong>شو الفرق بين View و Partial View؟</strong><br>View بتعرض صفحة كاملة، أما Partial View بتعرض جزء من الصفحة وبتساعد في إعادة استخدام الكود.</p>
+<hr>
+<p><strong>شو الفرق بين Stored Procedure و LINQ؟</strong><br>Stored Procedure مكتوبة في قاعدة البيانات وأسرع مع بيانات ضخمة، أما LINQ مكتوبة في الكود وأسهل للفهم والتعديل.</p>
+<hr>
+<p><strong>شو هي Async و Await؟</strong><br>Async بتعرّف دوال غير متزامنة، وAwait بتوقف الكود عشان تستنى نتيجة العملية بدون ما توقف التطبيق.</p>
+<hr>
+<p><strong>شو الفرق بين TempData, ViewData, و ViewBag؟</strong>  </p>
+<ul>
+<li><strong>TempData</strong>: بتخزن البيانات بين الطلبات.  </li>
+<li><strong>ViewData</strong>: بتنقل البيانات من الـ Controller للـ View كقاموس.  </li>
+<li><strong>ViewBag</strong>: زي ViewData لكن ديناميكي أكتر.</li>
+</ul>
+<hr>
+<p><strong>شو الفرق بين Dispose و Finalize؟</strong><br>Dispose بتتحكم فيها يدويًا عشان تحرر الموارد، وFinalize بيشتغل تلقائي عن طريق الـ Garbage Collector.</p>
+<hr>
+<p><strong>شو الفرق بين MVC و Web API؟</strong><br>MVC بيستخدم لتطبيقات الويب اللي فيها واجهة مستخدم، أما Web API بيستخدم للخدمات اللي بترجع بيانات زي JSON أو XML.</p>
+<hr>
+<p><strong>شو الفرق بين Struct و Class؟</strong><br>Struct بيتخزن في Stack وهو خفيف، أما Class بيتخزن في Heap وبيسمح بمرونة أكبر.</p>
+<hr>
+<p><strong>شو الفرق بين Get و Post؟</strong><br>Get بتجيب البيانات وتعرضها في الـ URL، أما Post بتبعت البيانات بشكل مخفي.</p>
+<hr>
+<p><strong>شو هو Model Binding؟</strong><br>تقنية بتحول البيانات اللي بتوصل مع الطلبات إلى كائنات عشان تسهل استخدامها بالكود.</p>
+<hr>
+<p><strong>شو الفرق بين Session State و Application State؟</strong><br>Session State بتخزن بيانات المستخدم الحالي لحاله، أما Application State بتخزن بيانات مشتركة لكل المستخدمين.</p>
+<hr>
+<p><strong>شو هي Bundling و Minification؟</strong>  </p>
+<ul>
+<li><strong>Bundling</strong>: بتدمج ملفات CSS وJavaScript بملف واحد.  </li>
+<li><strong>Minification</strong>: بتصغر حجم الملفات عن طريق إزالة المسافات والتعليقات.</li>
+</ul>
+<hr>
+<p><strong>شو الفرق بين JSON و XML؟</strong><br>JSON أخف وأسرع ومناسب للـ APIs، أما XML مرن أكتر لكنه أثقل.</p>
+<hr>
+<p><strong>شو الفرق بين Array, List و IEnumerable؟</strong>  </p>
+<ul>
+<li><strong>Array</strong>: حجمها ثابت وسريعة.  </li>
+<li><strong>List</strong>: ديناميكية وبتدعم الإضافة والحذف.  </li>
+<li><strong>IEnumerable</strong>: للتنقل بين العناصر بدون تعديل.</li>
+</ul>
+<hr>
+<p><strong>شو يعني كلاس واوبجكت؟</strong><br>الأوبجكت في البرمجة هو عبارة عن توصيف لمكون أو Entity موجود في الحياة العملية ممكن يكون كيان أو شخص أو آلة معنوي أو مادي، ولكل أوبجكت في عندي خصائص Attribute وفي عندي سلوكيات Behavior. أما الكلاس فهو تعميم مجرد لمجموعة من الأوبجكت اللي بيشتركوا بنفس الخصائص والسلوكيات كلها أو معظمها.</p>
+<hr>
+<p><strong>طيب شو الفرق بين الـ Static و Non-Static؟</strong><br>الـ Non-Static هي متغيرات مرتبطة وخاصة بكل أوبجكت لوحده وما في أي أوبجكت ثاني بيطلع عليها. أما الـ Static فهي متغيرات مشتركة بين كل الأوبجكت، الكل بيقدر يوصلها ويعدل عليها أو يقرأها عن طريق اسم الكلاس.</p>
+<hr>
+<p><strong>مبادئ الـ Object-Oriented؟</strong>  </p>
+<ul>
+<li><strong>الوراثة (Inheritance):</strong> فيها بأخذ خصائص وسلوكيات من الكلاس الأكبر Parent وبعطيهم للـ Child ليش؟ عشان يكون في عندي تعميم وتخصيص. مثلا كل المركبات إلها محرك ومقاعد وناقل سرعة، بس أنواعهم تختلف.</li>
+<li><strong>التعددية (Polymorphism):</strong> نفس السلوك ممكن تنفيذه بأكثر من طريقة وكل طريقة ممكن تحتاج باراميتر مختلفة وتعطي نتائج مختلفة، بس هم يكونوا نفس الاسم.</li>
+<li><strong>التجريد (Abstraction):</strong> بحاول أحط لكل الكلاسات اللي عندي أساس مجرد أبلش منه شغل بحيث أنطلق من التعميم للتخصيص.</li>
+<li><strong>التغليف (Encapsulation):</strong> الفكرة فيها أني أحمي معلومات الأوبجكت اللي عندي عن طريق Access Modifiers والـ Get &amp; Set.</li>
+</ul>
+<hr>
+<p><strong>شو هم الـ Access Modifiers؟</strong>  </p>
+<ul>
+<li><strong>Private:</strong> على مستوى الكلاس نفسه.  </li>
+<li><strong>Protected:</strong> على مستوى الكلاس والكلاسات اللي Inherited منه.  </li>
+<li><strong>Public:</strong> على مستوى الـ Namespace.</li>
+</ul>
+<hr>
+<p><strong>الفرق بين Interface و Abstract Class؟</strong>  </p>
+<ul>
+<li>الـ Interface بس يكون فيها Method كتعريف من غير Body.  </li>
+<li>أما داخل الـ Abstract ممكن أحط ميثودات فيهم كود وميثودات لا.  </li>
+<li>كمان بالـ Interface ما بعرف متغيرات، أما بالـ Abstract Class عادي.  </li>
+<li>والـ Abstract Class ما بقدر أعمل منه Object مباشر.  </li>
+<li>كمان الـ Abstract بتصل معه بالـ Inheritance مش زي Interface لازم أعملها Implement كلها.</li>
+</ul>
+<hr>
+<p><strong>الفرق بين For, While, و Do While؟</strong>  </p>
+<ul>
+<li><strong>For:</strong> بتلف لعدد دورات معين بناء على شرط محدد بالعدد.  </li>
+<li><strong>While:</strong> بتلف طالما الشرط بعطي True.  </li>
+<li><strong>Do While:</strong> تنفيذ لمره واحدة على الأقل، ثم إذا الشرط True بنستمر.</li>
+</ul>
+<hr>
+<p><strong>لو ما بدي أخلي الكلاس تبعي ينعمل Inheritance بأي حال شو بعمل؟</strong><br>بحطه Sealed.</p>
+<hr>
+<p><strong>إيش هو الـ Composition؟</strong><br>هي فكرة أني أعتبر أوبجكت من كلاس ثاني كواحد من خصائص أوبجكت أكبر. والمثال هو الموتور والسيارة، الموتور هو أوبجكت له خصائص وله كثير شغلات، بس هو بالأخير خاصية واحدة من خصائص السيارة.</p>
+<hr>
+<p><strong>أنواع العلاقات في قاعدة البيانات؟</strong>  </p>
+<ul>
+<li><strong>1-1:</strong> علاقة تبادلية مفتاح الربط بينهم اللي هو Foreign Key يكون موجود في واحد من الجدولين أو في اثنيناتهم.  </li>
+<li><strong>1-Many:</strong> علاقة فيها أوبجكت واحد يملك مجموعة من الأوبجكت في الجدول الثاني، والـ Foreign Key يكون عند تيبل الـ Many.  </li>
+<li><strong>Many-to-Many:</strong> لكل مجموعة أوبجكت من الفريق A ربط مع مجموعة من B وممكن يكون في تداخل، وهاي بلزمها تيبل ثالث يربط بين الجدولين عشان يزبط توصيف العلاقة.</li>
+</ul>
+<hr>
+<p><strong>أنواع الـ Join؟</strong>  </p>
+<ul>
+<li><strong>Inner Join:</strong> بهتم بالقيم المشتركة بين الجدولين بناء على شرط الربط.  </li>
+<li><strong>Outer Join:</strong> كل القيم اللي بالجدولين بجيبهم عدا المشترك بينهم.  </li>
+<li><strong>Left/Right:</strong> بجيب كل اللي بالجدول الأول + المشترك مع الجدول الثاني.</li>
+</ul>
+<hr>
+<p><strong>إيش هو الـ Indexing؟</strong><br>هو طريقة لتصنيف البيانات وتسهيل عملية ترتيبها واستعلامها واسترجاعها عن طريق إضافة أكثر من مفتاح فلترة للبيانات وأكثر من Unique Queue.</p>
+<hr>
+<p><strong>Nullable شو هي؟</strong><br>هاي هي أنه أسمح للمتغير يستقبل قيمة الـ Null جواه، هاي بتخص الـ Int, Bool, Double, Float لأنه String أصلا عادي تكون Null By Default.</p>
+<hr>
+<p><strong>أنواع الكلاسات في الـ C#؟</strong>  </p>
+<ul>
+<li><strong>Abstract.</strong>  </li>
+<li><strong>Static.</strong>  </li>
+<li><strong>Sealed.</strong>  </li>
+<li><strong>Partial.</strong></li>
+</ul>
+<hr>
+<p><strong>إيش هو الـ ORM (Object Relational Model)؟</strong><br>هو عبارة عن وسيط لربط الباك اند في قاعدة البيانات وله أكثر من أسلوب. مثلا:  </p>
+<ul>
+<li><strong>Entity Framework:</strong> بيعتمد على إنشاء نسخة طبق الأصل من قاعدة البيانات داخل ملف الباك اند على شكل كلاسات.  </li>
+<li><strong>ADO:</strong> طريقة لنقل الـ Query لقاعدة البيانات واستقبال النتيجة.  </li>
+<li><strong>Dapper:</strong> بتشتغل على فكرة الربط وتحويل البيانات اللي بيتم استقبالها لنوع معين بحيث تقسم الشغل بين الباك اند وقاعدة البيانات.</li>
+</ul>
+<hr>
+<p><strong>كيف بنقدر نوصل للمعلومات اللي داخل ملف AppSettings؟</strong><br>من خلال الـ IConfiguration Interface.</p>
+<hr>
+<p><strong>شو نوع الـ Return Data Type اللي ممكن نرجعها داخل الـ Actions؟</strong>  </p>
+<ul>
+<li><strong>Action Result():</strong> النوع الأشمل، يرجع كل شيء آخر مثل Data أو JSON Object أو View.  </li>
+<li><strong>Json Result:</strong> الهدف أن المشروع يكون كـ API فقط، والنتائج اللي بيرجعها تكون JSON Objects.  </li>
+<li><strong>Primitive Data Type:</strong> يرجع بيانات String, Int, Double، أو حتى Void.</li>
+</ul>
+<hr>
+<p><strong>شو بتعرف عن الـ Session والـ Cookie؟</strong><br>عبارة عن ملفات بتخزن معلومات عن مستخدم موقع الويب الحالي. الـ Session تخزن على السيرفر، أما الـ Cookie تخزن على نفس المتصفح.</p>
+<hr>
+<p><strong>شو هي الـ Dot Net؟</strong><br>هي Framework من مايكروسوفت إلها عدة إصدارات لتطوير تطبيقات الويب. تعتمد على C# بشكل أساسي وتدعم لغات أخرى. بدأت بـ Web Forms، ثم تطورت لـ Dot Net Framework. وأحدث إصدار هو Dot Net Core، اللي يتميز بأنه Cross-Platform، أسرع، وأخف. ويستخدم في تطوير Web API لربطها مع Front-End Framework مثل Angular وReact.</p>
+<hr>
+<p><strong>وين المكان اللي بنضيف فيه الـ Services/Packages؟</strong><br>على حسب إصدار الـ .NET. لو كنت على إصدارات .NET 5 وما قبلها، الإعداد يكون داخل ملف Startup. أما بالإصدارات الجديدة (.NET 6 وما بعدها)، كل شيء يضاف داخل ملف Program.cs.</p>
+<hr>
+<p><strong>شو الفرق بين AddScoped, AddDbContext, AddSingleton؟</strong>  </p>
+<ul>
+<li><strong>AddScoped:</strong> تستخدم للربط بين الـ Interface والـ Implementation خصوصا في Design Patterns.  </li>
+<li><strong>AddDbContext:</strong> لربط التطبيق بقاعدة البيانات باستخدام ADO/Entity Framework.  </li>
+<li><strong>AddSingleton:</strong> لإضافة Middleware داخل التطبيق.</li>
+</ul>
+<hr>
+<p><strong>شو هي الـ Dependency Injection؟</strong><br>هي طريقة للربط بين الـ Classes والـ Services داخل المشروع عن طريق طلب Object من كلاس آخر كـ Parameter داخل الـ Constructor.</p>
+<hr>
+<p><strong>شو هم الـ Design Patterns وشو أمثلة عليهم؟</strong><br>هي طريقة لتنسيق وتنظيم الكود وتوزيع الشغل داخل المشروع بهدف تحسين جودته وإدارته. أمثلة:  </p>
+<ul>
+<li>MicroServices.  </li>
+<li>MVC.  </li>
+<li>Onion Architecture.  </li>
+<li>Repository Pattern.  </li>
+<li>N-Layer.  </li>
+<li>Unit of Work.</li>
+</ul>
+<hr>
+<p><strong>شو هي ال Dependency Injection؟</strong><br>هي طريقة للربط بين الـ Classes والـ Services الموجودة في المشروع عن طريق أخذ object من الكلاس الثاني وطلبه كبراميتر داخل الـ constructor. الهدف منها أنه من أول ما أبدأ العمل مع الكلاس يكون هذا الـ object معي وجاهز للاستخدام.</p>
+<p><strong>ايش هم ال Design Pattern وشو في عليهم أمثلة؟</strong><br>هي طريقة لتنسيق وتنظيم الكود وتوزيع العمل داخل المشروع بهدف تحسين جودة المشروع والقدرة على إدارته والتعديل عليه. من الأمثلة عليها:</p>
+<ul>
+<li>MicroServices</li>
+<li>MVC</li>
+<li>Onion Architecture</li>
+<li>Repository Pattern</li>
+<li>N Layer</li>
+<li>Unit of Work</li>
+</ul>
+
+</body>
+</html>

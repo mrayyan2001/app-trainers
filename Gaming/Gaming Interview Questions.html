@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notonaskharabic.css">
+    <title>Gaming Interview Questions</title>
+    <style>
+        html, body {
+            font-family: 'Noto Naskh Arabic';
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="أسئلة-مقابلات-game-development">أسئلة مقابلات Game Development</h1>
+<h2 id="أسئلة-حول-تصميم-الألعاب-game-design-questions">أسئلة حول تصميم الألعاب (Game Design Questions):</h2>
+<h3 id="شو-الفرق-بين-2d-و-3d-game؟">شو الفرق بين 2D و 3D Game؟</h3>
+<ul>
+<li>2D Game: لعبة تعتمد على بعدين (عرض وارتفاع) فقط، زي ألعاب مثل Flappy Bird أو Pong.  </li>
+<li>3D Game: لعبة تعتمد على ثلاث أبعاد (عرض وارتفاع وعمق)، زي ألعاب مثل PUBG أو Fortnite.  <h3 id="شو-هو-game-loop؟">شو هو Game Loop؟</h3>
+</li>
+<li>هو العملية الأساسية في اللعبة، اللي بيتم فيها التحديث المستمر للمحتوى (زي حركة الشخصيات) وعرض الرسومات على الشاشة.  <h3 id="شو-هو-الفرق-بين-physics-engine-و-collision-detection؟">شو هو الفرق بين Physics Engine و Collision Detection؟</h3>
+</li>
+<li>Physics Engine: مسؤول عن محاكاة الفيزياء داخل اللعبة مثل الجاذبية والحركة.  </li>
+<li>Collision Detection: هو النظام المسؤول عن اكتشاف التصادمات بين الكائنات داخل اللعبة.<h3 id="شو-هو-algorithm-pathfinding؟">شو هو Algorithm Pathfinding؟</h3>
+</li>
+<li>هو الخوارزمية اللي بتساعد الشخصيات غير القابلة للعب (NPC) للوصول لأماكن معينة في اللعبة، زي A* أو Dijkstra.</li>
+</ul>
+<hr>
+<h2 id="أسئلة-عن-البرمجة-والأداء-programming-and-performance">أسئلة عن البرمجة والأداء (Programming and Performance):</h2>
+<h3 id="شو-الفرق-بين-frame-rate-و-refresh-rate؟">شو الفرق بين Frame Rate و Refresh Rate؟</h3>
+<ul>
+<li>Frame Rate: عدد الإطارات التي يتم عرضها في الثانية داخل اللعبة.  </li>
+<li>Refresh Rate: عدد المرات التي يتم فيها تحديث الشاشة في الثانية.  <h3 id="شو-هو-game-optimization؟">شو هو Game Optimization؟</h3>
+</li>
+<li>هو تحسين أداء اللعبة عشان تشتغل بشكل سلس على الأجهزة المختلفة، زي تقليل استهلاك الذاكرة أو تحسين سرعة الـ Rendering.  <h3 id="كيف-تتعامل-مع-memory-management-في-الألعاب؟">كيف تتعامل مع Memory Management في الألعاب؟</h3>
+</li>
+<li>باستخدام تقنيات زي الـ Object Pooling لتقليل استهلاك الذاكرة، أو الـ Garbage Collection لتقليل الفاقد.  <h3 id="كيف-تضمن-الأداء-الجيد-للعبة-على-منصات-متعددة؟">كيف تضمن الأداء الجيد للعبة على منصات متعددة؟</h3>
+</li>
+<li>باستخدام تقنيات مثل الـ Cross-Platform Development، والتأكد من توافق اللعبة مع المنصات المختلفة (PC، Console، Mobile).  </li>
+</ul>
+<hr>
+<h2 id="أسئلة-عن-محركات-الألعاب-game-engines">أسئلة عن محركات الألعاب (Game Engines):</h2>
+<h3 id="شو-هو-الفرق-بين-unity-و-unreal-engine؟">شو هو الفرق بين Unity و Unreal Engine؟</h3>
+<ul>
+<li>Unity: محرك ألعاب متعدد الاستخدامات يدعم 2D و 3D، يستخدم C# للبرمجة.  </li>
+<li>Unreal Engine: محرك ألعاب قوي جداً يدعم 3D، ويستخدم C++ و Blueprints للبرمجة.  </li>
+</ul>
+<h3 id="شو-هي-components-في-unity؟">شو هي Components في Unity؟</h3>
+<ul>
+<li>Components هي أجزاء من الكائنات داخل اللعبة (GameObjects) زي Mesh Renderer، Rigidbody، وCollider التي تضيف سلوكيات ووظائف للأشياء داخل اللعبة.  </li>
+</ul>
+<h3 id="كيف-تدير-الأحداث-في-unity؟">كيف تدير الأحداث في Unity؟</h3>
+<ul>
+<li>باستخدام Events أو Listeners التي تستمع للأحداث مثل الـ Click أو الـ Collision وتنفذ الإجراءات بناءً عليها.  </li>
+</ul>
+<hr>
+<h2 id="أسئلة-عن-الذكاء-الصناعي-في-الألعاب-ai-in-games">أسئلة عن الذكاء الصناعي في الألعاب (AI in Games):</h2>
+<h3 id="شو-هو-ai-pathfinding؟">شو هو AI Pathfinding؟</h3>
+<ul>
+<li>هو الخوارزمية المستخدمة لتحريك الشخصيات غير القابلة للعب (NPCs) للوصول لموقع معين مع تجنب العوائق في البيئة.</li>
+</ul>
+<h3 id="شو-هي-الـ-finite-state-machine-في-الألعاب؟">شو هي الـ Finite State Machine في الألعاب؟</h3>
+<ul>
+<li>هي تقنية بتنظم سلوك الشخصيات في اللعبة عن طريق تقسيم حالاتها المختلفة (مثل السير، القفز، الهجوم) وكيفية الانتقال بينها.  </li>
+</ul>
+<h3 id="كيف-تدمج-الـ-machine-learning-في-الألعاب؟">كيف تدمج الـ Machine Learning في الألعاب؟</h3>
+<ul>
+<li>عن طريق استخدام تقنيات الـ Reinforcement Learning لتدريب الشخصيات على اتخاذ قرارات بناءً على البيئة.  </li>
+</ul>
+<hr>
+<h2 id="أسئلة-عن-الجرافيكس-والتصميم-graphics-and-design">أسئلة عن الجرافيكس والتصميم (Graphics and Design):</h2>
+<h3 id="شو-الفرق-بين-sprites-و-models؟">شو الفرق بين Sprites و Models؟</h3>
+<ul>
+<li>Sprites: صور 2D تُستخدم في الألعاب 2D أو كـ Textures في ألعاب 3D.  </li>
+<li>Models: كائنات ثلاثية الأبعاد تُستخدم في الألعاب 3D، وتتم محاكاتها لتكون تفاعلية مع البيئة.  </li>
+</ul>
+<h3 id="شو-هو-الـ-shader؟">شو هو الـ Shader؟</h3>
+<ul>
+<li>هو برنامج صغير يتحكم في كيفية عرض الكائنات على الشاشة، زي إضافة الظلال والتأثيرات البصرية الأخرى.</li>
+</ul>
+<h3 id="شو-هو-الـ-lighting-في-الألعاب؟">شو هو الـ Lighting في الألعاب؟</h3>
+<ul>
+<li>هو عملية محاكاة الضوء في البيئة داخل اللعبة لخلق تأثيرات ظلية وحجمية لزيادة الواقعية.  </li>
+</ul>
+<hr>
+<h2 id="أسئلة-عن-النشر-والصيانة-deployment-and-maintenance">أسئلة عن النشر والصيانة (Deployment and Maintenance):</h2>
+<h3 id="شو-هي-خطوات-نشر-لعبة-على-متجر-التطبيقات؟">شو هي خطوات نشر لعبة على متجر التطبيقات؟</h3>
+<ol>
+<li>تأكد من اختبار اللعبة بشكل شامل.  </li>
+<li>إنشاء حساب Developer على المتجر المناسب (Google Play أو App Store).  </li>
+<li>تحميل اللعبة مع التوثيق المطلوب.  </li>
+<li>متابعة التحديثات وحل المشكلات بعد النشر.  </li>
+</ol>
+<h3 id="كيف-تضمن-استقرار-اللعبة-بعد-النشر؟">كيف تضمن استقرار اللعبة بعد النشر؟</h3>
+<ul>
+<li>من خلال اختبار اللعبة في بيئات متعددة، استخدام الـ Continuous Integration (CI)، ومراقبة الـ Crash Reports لمتابعة أي مشاكل تحدث بعد النشر.  </li>
+</ul>
+<h3 id="شو-هو-الـ-live-ops-في-الألعاب؟">شو هو الـ Live Ops في الألعاب؟</h3>
+<ul>
+<li>هو إدارة العمليات الخاصة باللعبة بعد إطلاقها، مثل إضافة محتوى جديد، وإصلاح الأخطاء، وتحليل البيانات الخاصة بسلوك اللاعبين.  </li>
+</ul>
+
+</body>
+</html>
