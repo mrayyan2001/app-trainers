@@ -27,34 +27,24 @@
 
 ---
 
----
-
-- [x] [6 Fundamental Programming Concepts (With Tips to Improve) | Indeed.com Canada](https://ca.indeed.com/career-advice/career-development/fundamental-programming-concepts)
-- [x] [What are the basic fundamental concepts of programming? (educative.io)](https://www.educative.io/answers/what-are-the-basic-fundamental-concepts-of-programming)
-- [x] [10 Advanced Python Concepts to Improve Your Python Skills | LinkedIn](https://www.linkedin.com/pulse/10-advanced-python-concepts-improve-your-skills-iies/)
-- [x] [25 Python Must-Know Concepts: From Beginner to Advanced | by Ebo Jackson | Level Up Coding (gitconnected.com)](https://levelup.gitconnected.com/25-python-must-know-concepts-from-beginner-to-advanced-6ae19aebdb6c)
-
----
-
----
-
 1. Basic Syntax
-   - [x] Comments
-   - [x] Print
-   - [x] Input
-   - [x] Casting
-   - [x] Concatenating
-   - [x] Operators
+   - [ ] Comments
+   - [ ] Print
+   - [ ] Input
+   - [ ] Casting
+   - [ ] Concatenating
+   - [ ] Operators
 2. Flow Control Structures (Conditionals and Loops)
-   - [x] Sequential
-   - [x] Selection (Conditionals)
-   - [x] Iteration (Loops)
+   - [ ] Sequential (One flow)
+   - [ ] Selection (Conditionals)
+   - [ ] Iteration (Loops)
 3. Data Types
-   - [x] String
-   - [x] Boolean
-   - [x] Numbers
-   - [x] Characters
-   - [x] constant
+   - [ ] String
+   - [ ] Boolean
+   - [ ] Numbers
+   - [ ] Characters
+   - [ ] constant
+   - [ ] Date time
 4. Variable Declaration
    - Constant variable
    - Global variable
@@ -63,63 +53,59 @@
    - Local variable
 5. Algorithms:
    - Sorting
-   -
+   - Searching
 6. Data Structures
-   - [x] Lists
-     - List Comprehension
-   - [x] Tuples
-   - [x] Dictionary
-   - [x] Set
-   - Stacks
-   - Heaps
-   - Trees
-   - Linked Lists
-   - Queues
-   - Arrays
-   - Tables
-   - Graphs
+   - [ ] Lists
+   - [ ] Tuples
+   - [ ] Dictionary
+   - [ ] Set
+   - [ ] Stacks
+   - [ ] Heaps
+   - [ ] Trees
+   - [ ] Linked Lists
+   - [ ] Queues
+   - [ ] Arrays
+   - [ ] Tables
+   - [ ] Graphs
 7. Functional Programming
    - Functions
    - Recursion
    - Lambda Functions
 8. Object-Oriented Programming (OOP)
 
-   - [x] Classes
-   - [x] Objects
-   - [x] Methods
-   - [x] Getter & Setter
-   - [x] Static data
-   - [x] Polymorphism
-   - [x] Encapsulation
-   - [x] Inheritance
-   - [x] Data Abstraction
-   - [x] Virtual
-   - [x] override & overload
-   - [x] access modifiers: public & private & protected members.
-   - [x] class method
-   - [x] static method
-   - [x] instance method
+   - [ ] Classes
+   - [ ] Objects
+   - [ ] Methods
+   - [ ] Getter & Setter
+   - [ ] Static data
+   - [ ] Polymorphism
+   - [ ] Encapsulation
+   - [ ] Inheritance
+   - [ ] Data Abstraction
+   - [ ] Virtual
+   - [ ] override & overload
+   - [ ] access modifiers: public & private & protected members.
+   - [ ] class method
+   - [ ] static method
+   - [ ] instance method
 
-   [Python OOPs Concepts - GeeksforGeeks](https://www.geeksforgeeks.org/python-oops-concepts/)
+   \*\*\* Relationships between classes
 
-   [Python Object Oriented Programming (With Examples) (programiz.com)](https://www.programiz.com/python-programming/object-oriented-programming)
-
-   ***
-
-   - Aggregation
-   - Composition
-   - Cohesion
-   - Dynamic binding
-   - Association
+   - Aggregation (Has-A) e.g., a car has an engine
+   - Composition (Part-Of) e.g., topics are part of a course
+   - Association (Uses-A) e.g., a student uses a library
+   - Inheritance (Is-A) e.g., a car is a vehicle
 
 9. Error Handling
    - Exception Handling
    - New Exceptions
-10. Debugging
-    - Syntax Errors
-    - Logical Errors
-    - Latent Errors
+10. Debugging and breakpoints
+    - Syntax Errors (e.g., missing colon, missing parenthesis)
+    - Logical Errors (e.g., incorrect algorithm)
+    - Runtime Errors (e.g., division by zero)
 11. IDEs and Coding Environments
+    1. Visual Studio Code
+    2. PyCharm
 12. File Handling
     - Reading from and writing to files
     - Manipulating file objects
