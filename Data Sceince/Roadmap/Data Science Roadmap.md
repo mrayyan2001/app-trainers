@@ -326,8 +326,3 @@ enhance your capabilities and make you more competitive in the job market.
 - Data Processing: MapReduce, Spark SQL
 - Data Storage: HDFS, NoSQL databases Cassandra, MongoDB
 - Data Ingestion: Kafka, Flume
-
-References:
-
-- [The Complete Data Science Roadmap video](https://www.youtube.com/watch?v=9R3X0JoCLyU)
-- [The Complete Data Science Roadmap pdf](https://cdn.codewithmosh.com/image/upload/v1721942360/guides/data-science-roadmap.pdf)
