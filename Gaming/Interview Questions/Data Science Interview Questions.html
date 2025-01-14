@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notonaskharabic.css">
+    <title>Data Science Interview Questions</title>
+    <style>
+        html, body {
+            font-family: 'Noto Naskh Arabic';
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+<h1 id="أسئلة-مقابلات-data-science">أسئلة مقابلات Data Science</h1>
+<h2 id="أسئلة-حول-البيانات-data-questions">أسئلة حول البيانات (Data Questions):</h2>
+<h3 id="شو-الفرق-بين-structured-data-و-unstructured-data؟">شو الفرق بين Structured Data و Unstructured Data؟</h3>
+<ul>
+<li>Structured Data: بيانات مرتبة بجداول، زي البيانات الموجودة بقاعدة بيانات SQL.  </li>
+<li>Unstructured Data: بيانات ما إلها شكل محدد زي الصور، الفيديوهات، أو النصوص الكبيرة، وبتحتاج أدوات خاصة للتعامل معها.  </li>
+</ul>
+<h3 id="شو-هو-data-cleaning؟">شو هو Data Cleaning؟</h3>
+<ul>
+<li>هي عملية ترتيب وتنظيف البيانات، زي إزالة الأخطاء، ترتيب البيانات، أو التعامل مع Missing Data عشان تكون جاهزة للتحليل.  </li>
+</ul>
+<h3 id="كيف-تتعامل-مع-missing-data؟">كيف تتعامل مع Missing Data؟</h3>
+<ul>
+<li>ممكن أحذف الـ Rows أو Columns اللي فيها Missing Data إذا كانت مش كثيرة. إذا كانت مهمة، بعوضها باستخدام Mean، Median، أو Mode حسب طبيعة البيانات.  </li>
+</ul>
+<h3 id="شو-الفرق-بين-overfitting-و-underfitting؟">شو الفرق بين Overfitting و Underfitting؟</h3>
+<ul>
+<li>Overfitting: لما النموذج يتعلم كل تفاصيل Training Data لدرجة إنه ما يشتغل منيح مع Testing Data.  </li>
+<li>Underfitting: لما النموذج ما يتعلم كفاية، فبيكون ضعيف سواء على Training Data أو Testing Data.  </li>
+</ul>
+<h3 id="كيف-تتعامل-مع-imbalanced-data؟">كيف تتعامل مع Imbalanced Data؟</h3>
+<ul>
+<li>باستخدام تقنيات زي Oversampling (SMOTE)، UnderSampling. </li>
+</ul>
+<hr>
+<h2 id="أسئلة-تحليل-البيانات-data-analysis">أسئلة تحليل البيانات (Data Analysis):</h2>
+<h3 id="شو-الفرق-بين-descriptive-statistics-و-inferential-statistics؟">شو الفرق بين Descriptive Statistics و Inferential Statistics؟</h3>
+<ul>
+<li>Descriptive Statistics: زي Mean و Standard Deviation لتلخيص البيانات.  </li>
+<li>Inferential Statistics: بيخليني أستنتج معلومات عن Population كبيرة باستخدام Sample صغيرة.  </li>
+</ul>
+<h3 id="إيش-هو-p-value؟">إيش هو p-value؟</h3>
+<ul>
+<li>رقم بيوضح إذا كانت النتيجة معنوية أو بس صدفة. إذا الـ p-value أقل من 0.05، معناته في علاقة معنوية بين المتغيرات.  </li>
+</ul>
+<h3 id="شو-الفرق-بين-correlation-و-causation؟">شو الفرق بين Correlation و Causation؟</h3>
+<ul>
+<li>Correlation: لما يكون في علاقة بين متغيرين، بس مو شرط يكون واحد سبب الثاني.  </li>
+<li>Causation: لما يكون واحد من المتغيرات هو السبب المباشر للتأثير على الثاني.  </li>
+</ul>
+<h3 id="شو-هو-ab-testing؟">شو هو A/B Testing؟</h3>
+<ul>
+<li>تجربة بنقارن فيها بين نسختين (A و B) من منتج أو ميزة، وبنختار الأفضل بناءً على النتائج.  </li>
+</ul>
+<hr>
+<h2 id="أسئلة-تعلم-الآلة-machine-learning">أسئلة تعلم الآلة (Machine Learning):</h2>
+<h3 id="شو-الفرق-بين-supervised-learning-و-unsupervised-learning؟">شو الفرق بين Supervised Learning و Unsupervised Learning؟</h3>
+<ul>
+<li>Supervised Learning: النموذج بتدرب على بيانات ومعاها Labels، زي تصنيف الصور.  </li>
+<li>Unsupervised Learning: النموذج بتدرب على بيانات بدون Labels، زي Clustering.  </li>
+</ul>
+<h3 id="شو-هي-أشهر-خوارزميات-machine-learning؟">شو هي أشهر خوارزميات Machine Learning؟</h3>
+<ul>
+<li>Classification: Logistic Regression، Decision Trees، SVM.  </li>
+<li>Regression: Linear Regression، Polynomial Regression.  </li>
+<li>Clustering: K-Means، Hierarchical Clustering.  </li>
+</ul>
+<h3 id="كيف-تختار-أفضل-نموذج-للبيانات؟">كيف تختار أفضل نموذج للبيانات؟</h3>
+<ul>
+<li>باستخدام Metrics زي Accuracy، Precision، Recall، أو F1 Score حسب طبيعة المشكلة.  </li>
+</ul>
+<h3 id="شو-هي-تقنيات-dimensionality-reduction؟">شو هي تقنيات Dimensionality Reduction؟</h3>
+<ul>
+<li>PCA (Principal Component Analysis).  </li>
+<li>LDA (Linear Discriminant Analysis).  </li>
+</ul>
+<h3 id="شو-هو-cross-validation؟">شو هو Cross-Validation؟</h3>
+<ul>
+<li>تقنية لتقييم أداء النموذج عن طريق تقسيم البيانات لمجموعات تدريب واختبار متعددة. </li>
+</ul>
+<hr>
+<h2 id="أسئلة-البرمجة-وتحليل-البيانات">أسئلة البرمجة وتحليل البيانات:</h2>
+<h3 id="شو-الفرق-بين-pandas-و-numpy؟">شو الفرق بين Pandas و NumPy؟</h3>
+<ul>
+<li>Pandas: لمعالجة وتحليل البيانات زي DataFrames.  </li>
+<li>NumPy: للعمليات الرياضية والمصفوفات.  </li>
+</ul>
+<h3 id="شو-هي-طرق-التعامل-مع-big-data؟">شو هي طرق التعامل مع Big Data؟</h3>
+<ul>
+<li>باستخدام تقنيات زي Hadoop و Spark.  </li>
+</ul>
+<h3 id="كيف-تتعامل-مع-time-series-data؟">كيف تتعامل مع Time Series Data؟</h3>
+<ul>
+<li>باستخدام مكتبات زي statsmodels أو Prophet وتحليل الاتجاهات الموسمية.  </li>
+</ul>
+<hr>
+<h2 id="أسئلة-متعلقة-بالنشر-deployment">أسئلة متعلقة بالنشر (Deployment):</h2>
+<h3 id="شو-الخطوات-الأساسية-لنشر-نموذج-machine-learning؟">شو الخطوات الأساسية لنشر نموذج Machine Learning؟</h3>
+<ol>
+<li>تدريب النموذج.  </li>
+<li>تقييم الأداء.  </li>
+<li>حفظ النموذج (Model Serialization).  </li>
+<li>نشره كـ API باستخدام Flask أو FastAPI.  </li>
+<li>مراقبة الأداء بعد النشر.  </li>
+</ol>
+<h3 id="شو-الفرق-بين-batch-processing-و-real-time-processing؟">شو الفرق بين Batch Processing و Real-Time Processing؟</h3>
+<ul>
+<li>Batch Processing: معالجة البيانات دفعة واحدة.  </li>
+<li>Real-Time Processing: معالجة البيانات فور وصولها.  </li>
+</ul>
+<hr>
+
+</body>
+</html>
