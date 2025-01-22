@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Set a background color */
+body {
+    background-color: white;
+
+    /* Changed to your company's primary color */
+    font-family: Helvetica, sans-serif;
+}
+
+/* General styles for headings */
+h1 {
+    text-align: center;
+    color: #eb3f4f;
+    /* Company color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: #eb3f4f;
+    /* Changed to white for contrast */
+    font-size: 2rem;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #eb3f4f;
+    /* Changed to white for consistency */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    text-align: center;
+    /* color: #eb3f4f; */
+    /* Changed to white for contrast */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    
+}
+
+/* Ensure each section has spacing */
+section {
+    margin-bottom: 50px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #eb3f4f;
+    /* Changed to white */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    /* Changed to white */
+    border: 4px solid #eb3f4f;
+    /* Changed border color */
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+.left *,
+.right * {
+    direction: rtl;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    /* Changed to white */
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+    /* Updated color */
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    /* Changed to white */
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    /* Updated color */
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    /* Kept as white for readability */
+    position: relative;
+    border-radius: 6px;
+    /* color: white; */
+    /* Changed text color for branding */
+    /* background: #e13142; */
+    border: 3px solid #eb3f4f;
+
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+    /* Place the timeline to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid white;
+        /* Updated to white */
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
