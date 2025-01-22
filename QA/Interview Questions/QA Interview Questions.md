@@ -1,49 +1,76 @@
-# QA Interview Questions
+### الأسئلة المقابلات الخاصة بـ QA&QC:
 
-## Basic ISTQB – CTFL
+## المستوى 1: الأسئلة الأساسية
 
-### Fundamentals of Testing
+### **ما هو معنى QA و QC؟**
 
-1. لماذا **testing** ضروري، وما هي فوائده في تطوير البرمجيات؟
-2. ما هو **testing**؟ وما هي أهدافه؟
-3. ما هي **seven testing principles**؟ مع تقديم أمثلة.
-4. هل يمكنك شرح **fundamental test process**؟
-5. كيف يؤثر علم النفس على عملية **testing**؟
-6. ما هو **code of ethics** في **software testing**؟ ولماذا هو مهم؟
+- **QA**: ضمان الجودة (Quality Assurance) هو العملية التي تهدف إلى تحسين جودة المنتجات من خلال الممارسات الوقائية.
+- **QC**: فحص الجودة (Quality Control) هو العملية التي تتعلق بالكشف عن العيوب والأخطاء في المنتج النهائي.
 
-### Testing Throughout the Software Development Lifecycle
+### **ما هو دورة حياة اختبار البرمجيات (STLC)؟**
 
-1. ما هي **Software Development Lifecycle Models**؟
-2. ما هي **Test Levels** المختلفة؟
-3. ما هي **Test Types**؟
-4. ما هو **Maintenance Testing**، ولماذا يُعتبر ضروريًا؟
+- **STLC** (Software Testing Life Cycle) هو مجموعة من المراحل التي يتم خلالها تخطيط وتنفيذ ومراقبة الاختبارات للتأكد من جودة البرمجيات. تشمل هذه المراحل:
+  1.  التخطيط.
+  2.  التحليل والتصميم.
+  3.  تنفيذ الاختبارات.
+  4.  التحقق من النتائج.
+  5.  إغلاق الاختبارات.
 
-### Static Testing
+### **ما هي أنواع الاختبارات (Type of Testing)؟**
 
-1. ما هي تقنيات **Static Testing**، وما هي خطوات العملية؟
-2. كيف يتم تنفيذ **Review Process**؟
-3. ما هو **Static Analysis by Tools**، وما أهميته؟
+- الاختبارات يمكن أن تكون:
+  - **Functional Testing**: مثل اختبار التكامل، اختبار النظام.
+  - **Non-Functional Testing**: مثل اختبار الأداء، اختبار التحميل.
 
-### Test Technique
+## المستوى 2: الأسئلة المتوسطة
 
-1. ما هي فئات **test design techniques**؟
-2. اشرح **Specification-based / Black Box Technique** مع مثال.
-3. ماذا تعرف عن **Structure-based / White Box Technique**؟
-4. متى يُفضل استخدام **Experience-based Technique**؟
-5. كيف يمكن اختيار **Test Technique** المناسب؟
+### **ما هي مستويات الاختبار (Level of Testing)؟**
 
-### Test Management
+- تتضمن مستويات الاختبار:
+  - **Unit Testing**: اختبار الأجزاء الصغيرة من التطبيق.
+  - **Integration Testing**: التأكد من أن المكونات تعمل معًا.
+  - **System Testing**: التأكد من أن النظام يعمل ككل.
+  - **Acceptance Testing**: التأكد من أن النظام يلبي احتياجات العميل.
 
-1. ما هي **Test Organization**؟
-2. اشرح كيفية **Test Planning and Estimation**.
-3. كيف يتم مراقبة وضبط **Test Process Monitoring and Control**؟
-4. ما هو دور **Configuration Management** في **testing**؟
-5. كيف يتم التعامل مع **Risk and Testing**؟
-6. ما هي **Incident Management**، وما أهميتها؟
+### **ما هو اختبار العملية (Process of Testing)؟**
 
-### Tools Support for Testing
+- هو عملية التحقق من أن جميع الإجراءات المتعلقة بالاختبار تتم بشكل صحيح، بدءًا من التخطيط وحتى الإغلاق.
 
-1. ما هي اعتبارات استخدام **Test Tools**، وما هي أنواعها؟
-2. كيف يتم الاستخدام الفعّال لـ **Tools** في **testing**؟
+### **ما هي طرق الاختبار (Method of Testing)؟**
 
-## Advanced & Automation QC & QA
+- تشمل الطرق:
+  - **Manual Testing**: حيث يقوم المختبر بإجراء الاختبارات يدويًا.
+  - **Automated Testing**: باستخدام أدوات البرمجيات لأتمتة عملية الاختبار.
+
+### **ما هو تخطيط الاختبار (Test Planning)؟**
+
+- هو عملية تحديد وتوثيق استراتيجية الاختبار التي ستستخدم في المشروع، بما في ذلك الموارد، الجداول الزمنية، والتقنيات المستخدمة.
+
+### **كيف تكتب حالة اختبار (BRD)؟**
+
+- **BRD** (Business Requirement Document) هو الوثيقة التي تحدد متطلبات العمل. كتابة حالة الاختبار تعتمد على هذه المتطلبات وتقوم بتحديد السيناريوهات المختلفة التي يجب اختبارها.
+
+## المستوى 3: الأسئلة المتقدمة
+
+### **ما الفرق بين Functional Testing وNon-Functional Testing؟**
+
+- **Functional Testing**: اختبار يعمل على التأكد من أن التطبيق يقوم بالوظائف المتوقعة.
+- **Non-Functional Testing**: يشمل اختبارات الأداء مثل اختبار التحميل أو اختبار الإجهاد.
+
+### **ما هي عملية Verification Test وValidation Test؟**  
+ - **Verification**: التأكد من أن المنتج يتم بناؤه بشكل صحيح وفقًا للمواصفات. - **Validation**: التأكد من أن المنتج يلبي احتياجات وتوقعات العميل.
+
+### **ما هو Test Environment وTest Execution؟**  
+ - **Test Environment**: هي مجموعة الأدوات والأنظمة المستخدمة لتنفيذ الاختبارات. - **Test Execution**: هو عملية إجراء الاختبارات على المنتج في بيئة الاختبار.
+
+### **ما هي Bugs, Release, Build**  
+ - **Bugs**: هي العيوب التي يتم اكتشافها أثناء الاختبار. - **Release**: هو النسخة الجديدة من التطبيق أو البرنامج. - **Build**: هو التحديثات التي يتم إضافتها إلى الإصدار الحالي.
+
+### **ما هي حالة الاختبار (Test Case)؟**  
+ - هي الوثيقة التي تحتوي على تعليمات خطوة بخطوة لاختبار مكون أو وظيفة معينة من البرنامج.
+
+## المستوى 4: الأسئلة المتقدمة جدًا
+
+### **ما هو API Soup UI و Postman؟**  
+ - **API Soup UI**: هو أداة لاختبار واجهات البرمجة (APIs) من خلال واجهة المستخدم الرسومية.  
+ - **Postman**: أداة تتيح لك اختبار واجهات البرمجة **API** من خلال إرسال طلبات **GET** و **POST** إلى **API** والتحقق من الاستجابة.
